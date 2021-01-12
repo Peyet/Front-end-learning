@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单域</title>
+</head>
+<body>
+    <form action="url地址" method="提交方式 get or post" name="表单域名称">
+        各种表单元素控件 <br />
+        <!-- 文本框 -->
+        用户名:<input type="text" name="username" value="请输入用户名" maxlength="6"> <br>
+        <!-- password  -->
+        密码: <input type="password" name="password" > <br>
+        <!-- radio 单选按钮, 多选一  必须有相同的名字才可以实现多选一-->
+        <!-- 单选按钮和复选按钮可以设置checked属性 -->
+        性别:  <input type="radio" name="gender" value="男">男  <input type="radio" name="gender" value="女">女 <input type="radio" name="gender" value="保密" checked="checked">保密 <BR>
+        <!-- CHECKBOX 复选框  必须有相同的名字-->
+        爱好: <input type="checkbox" name="habit" value="吃饭" > 吃饭  <input type="checkbox" name="habit" value="睡觉">睡觉  <input type="checkbox" value="打豆豆" name="habit" value="打豆豆" checked="checked">打豆豆
+        <br>
+        <input type="submit" value="register">
+        <br>
+        <!-- 重置按钮可以还原表单的默认状态 -->
+        <input type="reset">     <br>
+        <!-- 普通按钮 button 后期结合js搭配使用-->
+        <input type="button" value="按钮"><br>
+        <!-- file 文件域 上传文件使用 -->
+        <input type="file">
+        
+    </form>
+</body>
+</html>
